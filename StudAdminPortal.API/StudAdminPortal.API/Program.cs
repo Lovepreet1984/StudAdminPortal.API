@@ -16,7 +16,6 @@ builder.Services.AddCors((options) => {
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddDbContext<StudentAdminContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Festify")));
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
